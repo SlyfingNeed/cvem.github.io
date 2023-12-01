@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCEM Calculate</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Patrick+Hand&family=Playpen+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="styles1.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-nav">
+            <p>CVEM</p>
+            </div>
+          <ul>
+            <li><a href="index.html" id="home-link">Home</a></li>
+            <li><a href="calculate" id="calculate-link">Calculate</a></li>
+            <li><a href="reference" id="reference-link">Reference</a></li>
+          </ul>
+    
+          <div class="menu-toggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+    
+      <main>
+        <section id="calculator">
+
+              <div class="question" id="question-name">
+                <h2>What is your name?</h2>
+                <input type="character" id="name" placeholder="Your Name">
+              </div>
+              
+              <div class="question" id="question-grade">
+                <h2>What grade are you on?</h2>
+                <select id="grade">
+                    <option value="g-1">Grade 1</option>
+                    <option value="g-2">Grade 2</option>
+                    <option value="g-3">Grade 3</option>
+                </select>
+            </div>
+
+            <div class="question" id="question1">
+              <h2>What type of vehicle you use to school?</h2>
+              <select id="vehicleType">
+                  <option value="car">Car (Petrol)</option>
+                  <option value="car-d">Car (Diesel)</option>
+                  <option value="bus">Bus</option>
+                  <option value="motor">Motorcycle</option>
+                  <option value="car-e">car (electric)</option>
+              </select>
+          </div>
+
+          <div class="question" id="question2">
+              <h2>How long does it takes to your school? (in KM)</h2>
+              <input type="number" id="mileage" placeholder="Enter kilometer">
+          </div>
+
+          <div class="question" id="question3">
+              <button onclick="calculateCarbon()">Calculate</button>
+          </div>
+
+          <section id="result" class="hidden">
+            <h2>Your Carbon Emission per day is</h2>
+            <p id="carbonResult">-</p>
+            <P>That is equivalent to </P>
+            <p id="treeEqui">-</p>
+            <canvas id="treeIllus"></canvas>
+           </section>
+
+
+        </section>
+      </main>
+    <script src="script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
