@@ -28,17 +28,16 @@ function getCurrentQuestionNumber() {
 function calculateCarbon() {
   const vehicleType = document.getElementById('vehicleType').value;
   const mileage = parseFloat(document.getElementById('mileage').value);
-  const tree=65;
+  const tree=68.5;
 
-  const carbonEmission = (mileage / getCarbonFactor(vehicleType) * tree) ;
-  const treeEqui = carbonEmission * tree / 10;
+  const carbonEmission = (mileage * getCarbonFactor(vehicleType)) ;
+  const treeEqui = carbonEmission / tree;
 
   // Display result
   document.getElementById('result').classList.remove('hidden');
   document.getElementById('carbonResult').textContent = carbonEmission.toFixed(1) + ' g  CO2';
-  document.getElementById('treeEqui').textContent = treeEqui.toFixed(1) + '%';
+  document.getElementById('treeEqui').textContent = treeEqui.toFixed(0) + ' Trees needed to store your carbon emission!';
 }
-
 
 function getCarbonFactor(vehicleType) {
   switch (vehicleType) {

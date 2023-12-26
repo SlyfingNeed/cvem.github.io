@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCEM Reference</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Patrick+Hand&family=Playpen+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="styles2.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script type="text/javascript" src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-nav">
+            <p>CVEM</p>
+            </div>
+          <ul>
+            <li><a href="index.html" id="home-link">Home</a></li>
+            <li><a href="calculate.html" id="calculate-link">Calculate</a></li>
+            <li><a href="reference.html" id="reference-link">Reference</a></li>
+          </ul>
+    
+          <div class="menu-toggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+    
+      <main>
+        <section id="reference" class="px-7">
+            <h1>How we do it?</h1>
+            <p id="teks">We start by identifying the carbon emission factor involving the vehicle type emission and its average carbon production (to see the reference, see below). Then from the distance input received to Sekolah Ciputra, we can conclude the final amount of carbon emission produced. </p>
+            
+            <math id="formula" display="block">
+              <mn>C = </mn>
+              <mfrac>
+                <mn>Ct . Tr</mn>
+                <mn>△x</mn>
+              </mfrac>
+            </math>
+            <p id="eq">eq.1 Vehicle carbon emission equation used in VCEM</p>
+            <p id="teks">C = Carbon emission (g CO2)</p>
+            <p id="teks">Ct = Car type carbon emission</p>
+            <p id="teks">Tr = Tree carbon arbsorption average (65 g CO2)</p>
+            <p id="teks">△x = Distance travelled by user's home to Sekolah Ciputra</p>
+            <p id="teks">The figure shown below is the flowchart diagram used by researcher to calculatre the carbon emission factor, by inserting the values needed, we calculate the input data into our previous equation.</p>
+            <img src="calc-diagram.png" class="diagram">
+            <h2>Example</h2>
+            <p>Let's make an example to verify this solution by using car (gas) as vehicle type and travel distance of 5km with the tree carbon factor known previously</p>
+            <math id="formula-1" display="block">
+              <mn>192 g CO2/km X 5 km = 960 g CO2</mn>
+            </math><br>
+            <p id="teks">Hence, the amount of carbon emissions produced by our previous criteria is 960 g CO2.</p>
+            <p id="teks">Another aspect that I want to incude in the product is the equivalent of trees used to store the carbon emissions that were produced by someone. One mature tree can absorb carbon emissions at 68.5 grams per day (Georgette. K., 2023). Utilizing this as a generalization, the amount of carbon emissions produced beforehand can be devided by tree factor in order to find the quantity of trees needed to store the carbon emissions. Taking the previous solution as an example:</p>
+            <math id="formula-1" display="block">
+              <mn>960 / 68.5 = 14.01</mn>
+            </math>
+            <p id="teks">Thus, the trees needed to store 960 grams of carbon emissions are 14 trees.</p>
+            <h2>Reference</h2>
+            <p>Kurniawan, A & Priyantoro, D. D. (2022) Membandingkan Jejak Karbon. Indonesia: Kompas.
+              Kilgore, G. (2023) Carbon Ecological Footprint Calculator. United States: 8 Billion Trees.
+              Morris, S. (n.d) Programming Languages. United States: SkillCrush.
+              Sufiyan, T. (2023) Node.js: A Comprehensive Guide. India: Simple Learn.</p>
+
+
+        </section>
+      </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

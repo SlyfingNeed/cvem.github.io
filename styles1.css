@@ -22,10 +22,10 @@ section {
 }
 
 #calculator, #result {
-    background-color: #fff;
-    padding: 100px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    width: auto;
+    padding: 50px;
+    border-radius: 1px;
 }
 
 .hidden {
@@ -41,3 +41,11 @@ button {
 .question question-name {
     margin-top: 5px;
 }
+
+#tree{
+    width: 500px;
+    height: auto;
+    left: 50;
+    z-index: -1;
+}
+

@@ -19,8 +19,8 @@
             </div>
           <ul>
             <li><a href="index.html" id="home-link">Home</a></li>
-            <li><a href="calculate" id="calculate-link">Calculate</a></li>
-            <li><a href="reference" id="reference-link">Reference</a></li>
+            <li><a href="calculate.html" id="calculate-link">Calculate</a></li>
+            <li><a href="reference.html" id="reference-link">Reference</a></li>
           </ul>
     
           <div class="menu-toggle">
@@ -33,8 +33,9 @@
       </header>
     
       <main>
+        <p style="background-image: url('tree-disp.png');">
         <section id="calculator">
-
+          
               <div class="question" id="question-name">
                 <h2>What is your name?</h2>
                 <input type="character" id="name" placeholder="Your Name">
@@ -68,13 +69,13 @@
           <div class="question" id="question3">
               <button onclick="calculateCarbon()">Calculate</button>
           </div>
-
+          
+          
           <section id="result" class="hidden">
             <h2>Your Carbon Emission per day is</h2>
-            <p id="carbonResult">-</p>
-            <P>That is equivalent to </P>
-            <p id="treeEqui">-</p>
-            <canvas id="treeIllus"></canvas>
+            <h2 id="carbonResult">-</h2>
+            <h2>That is equivalent to </h2>
+            <h2 id="treeEqui">-</h2>
            </section>
 
 
