@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Patrick+Hand&family=Playpen+Sans:wght@700&display=swap" rel="stylesheet">
   <link href="/dist/output.css" rel="stylesheet">
+  <link rel="icon" href="icon.png" type="image/x-icon">
 </head>
 <body>
   <header>
@@ -18,17 +19,17 @@
         <p>CVEM</p>
         </div>
       <ul>
-        <li><a href="index.html" id="home-link">Home</a></li>
-        <li><a href="calculate.html" id="calculate-link">Calculate</a></li>
-        <li><a href="reference.html" id="reference-link">Reference</a></li>
+        <li><a href="index.html" id="home-link">
+        <img src="icon.png" alt="" class="icon-home">
+        <span>Home</span>
+        </a></li>
+        <li><a href="calculate.html" id="calculate-link">
+        <img src="calculate-icon.png" alt="" class="icon-calculate">
+        <span>Calculate</span> </a></li>
+        <li><a href="reference.html" id="reference-link">
+        <img src="reference-icon.png" alt="" class="icon-reference"> 
+         <span>Reference</span></a></li>
       </ul>
-
-      <div class="menu-toggle">
-        <input type="checkbox"/>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </nav>
   </header>
 
@@ -38,23 +39,22 @@
             <div class="content">
 
             <h1 class="h1-landing">Start a better future by <br><span>knowing your Emission</span></h1>
-            <P>Committing to a change is a must, by possessing a knowledge towards your vehicle carbon emission, you contribute towards a better ecogreen future by able to reduce and using more efficient use</p>
+            <P>Committing to a change is a must, by possessing a knowledge towards your vehicle carbon emission, you contribute towards a better ecogreen future by able to reduce and using more efficient use.</p>
+              <a href="calculate.html" id="button">
+                <button href="calculate.html" id="button">
+                <span>
+                  Calculate Now!
+                </span>
+                </button>
+              </a>
 
-              <button href="calculate.html" class="text-black font-bold py-2 px-4 rounded">
-                Calculate Now!
-              </button>
-                
-          </div>
+             </div>
          
     </section>
 
-    <section id="dyk">
-      <div class="flex">
-      </div>
+    <section class="sub-page">
+      <img src="footerbg.png" alt="background" class="sub-bg">
     </section>
-
-    
-
   </main>
 
   <script src="script.js"></script>

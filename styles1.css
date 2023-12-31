@@ -15,7 +15,6 @@ body {
 section {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     justify-content: center;
     height: 100vh;
     text-align: center;
@@ -47,5 +46,13 @@ button {
     height: auto;
     left: 50;
     z-index: -1;
+}
+
+.sub-bg{
+    width: 2000px;
+    height: auto;
+    position: sticky;
+    margin-top: 0px;
+
 }
 

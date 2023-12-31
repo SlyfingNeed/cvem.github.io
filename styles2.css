@@ -19,7 +19,6 @@ body{
 @tailwind utilities;
 
 nav {
-    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-around;
@@ -33,15 +32,15 @@ nav .logo-nav{
     font-size: xx-large;
     letter-spacing: 5px;
     margin-top: 10px;
-    margin-left: 5%;
+    margin-left: -270px;
+    display: flex;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    width: 70vh;
     justify-content: space-between;  
-    margin-left: 100vh;
+    
 }
 
 nav ul li:hover{
@@ -54,33 +53,26 @@ nav ul li a {
     color: black;
 }
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
-    background-color: rgb(233, 233, 244);
+.icon-home{
+    width: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
-
-.menu-toggle input {
-    position: absolute;
-    width: 30px;
-    height: 27px;
-    right: -2px;
-    top: -5px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
+.icon-calculate{
+    width: 35px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-
-.menu-toggle span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: rgb(152, 152, 173);
-    border-radius: 3px;
-    transition: all 0.5s;
+.icon-reference{
+    width: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 button{
@@ -118,40 +110,43 @@ button{
 #eq{
     font-size: smaller;
 }
-/* Desktop*/
-@media screen and (max-width: 1280px){
-    nav ul{
-        width: 50vh;
-    }
-    nav .logo-nav{
-        width: 70vh;
-    }
-    
+
+.sub-bg{
+    width: 2000px;
+    height: auto;
+    position: sticky;
+    margin-top: -30px;
+
 }
 
 /* Tablet display*/
-@media screen and (max-width: 768px){
-    nav ul{
-        position: relative;
-        width: fit-content;
-    }
+@media screen and (max-width: 1024px){
+    
+    #reference{
 
-    nav .logo-nav{
-        width: 5vh;
     }
-
-    .landing-img{
-        height: 300px;
-        width: 350px;
-    }
-
-    .content{
-        size: 50%;
-    }
-
-    .h1-landing{
+    .landing-page{
         margin-top: 500px;
-        margin-right: 500px;
+    }
+    
+    nav .logo-nav{
+        margin-left: 40px;
+    }
+
+    nav ul .icon-home{
+        padding-top: 20px;
+    }
+
+    nav ul .icon-calculate{
+        margin: 0px 35px;
+        padding-top: 15px;
+        width: 40px;
+        height: auto;
+    }
+
+    nav ul .icon-reference{
+        margin: 0px 0px;
+        padding-top: 17px;
     }
 }
 
@@ -164,33 +159,34 @@ button{
         background-color: rgb(233, 233, 244);
     }
 
-    .logo-nav {
-        transform: scale(0.8);
-        align-items: flex-start;
-    }
-
-    nav ul{
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100vh;
-        width: 100vh;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        z-index: -1;
-        transform: translateX(70%);
-        transition: all 0.5s;
-        font-size: large;
-        background-color: rgb(174, 174, 202);
-    }
-
-    nav ul.slide{
-        transform: translateX(0) scale(0);
-    }
+    
     .landing-page{
-        flex: content;
-        flex-direction: row;
+        margin-top: 500px;
+    }
+
+    nav span{
+        opacity: 0;
+    }
+    
+    nav .logo-nav{
+        margin-left: 40px;
+    }
+
+    nav ul .icon-home{
+        margin-left: 100px;
+        padding-top: 20px;
+    }
+
+    nav ul .icon-calculate{
+        margin: 0px 35px;
+        padding-top: 15px;
+        width: 40px;
+        height: auto;
+    }
+
+    nav ul .icon-reference{
+        margin: 0px 0px;
+        padding-top: 17px;
     }
 }
 
